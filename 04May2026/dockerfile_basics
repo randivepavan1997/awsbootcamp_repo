@@ -1,0 +1,18 @@
+FROM:
+    pick a base image to build
+RUN:
+    Executes a command during image build
+VOLUME:
+    Create 
+WORKDIR:
+    Sets the working directory for following instructions
+COPY:
+    Copies files from the host into the image
+ENV:
+    Defines environment variables inside the image
+USER:
+    Specifies the user to avoid running as root - improves security
+EXPOSE:
+    Documents the port theh container will listen to
+ENTRYPOINT:
+    Sets the default command to run when the container starts
