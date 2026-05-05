@@ -1,0 +1,3 @@
+the docker image with AMD-64 hardware will not pulled and run on other hardware machine.
+To solve, we can use docker buildx rather than docker build which we can create and run the images on any type of hardware machines.
+
