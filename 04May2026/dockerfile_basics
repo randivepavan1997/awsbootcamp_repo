@@ -16,3 +16,8 @@ EXPOSE:
     Documents the port theh container will listen to
 ENTRYPOINT:
     Sets the default command to run when the container starts
+
+Multi Stage docker build:
+    Build Stage
+    Package Stage
+
