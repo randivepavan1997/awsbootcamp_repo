@@ -1,0 +1,16 @@
+slice function:
+
+terraform console
+merge
+meta arguments:
+    depends on
+    count
+    for each
+    provider
+    providers
+    lifecycle
+values function
+
+
+variable_precedence:
+    
