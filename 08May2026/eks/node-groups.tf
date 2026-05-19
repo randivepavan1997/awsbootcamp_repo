@@ -1,11 +1,11 @@
 resource "aws_eks_node_group" "node-group" {
   cluster_name    = aws_eks_cluster.eks_cluster.name
-  node_group_name = "chirag-bootcamp-node-group"
+  node_group_name = "pavan-bootcamp-node-group"
   node_role_arn   = aws_iam_role.node_group_role.arn
   subnet_ids      = var.public_subnet_ids
 
   scaling_config {
-    desired_size = 2
+    desired_size = 1
     max_size     = 3
     min_size     = 1
   }
@@ -30,7 +30,7 @@ resource "aws_eks_node_group" "node-group" {
   }
 
 #   remote_access {
-#     ec2_ssh_key = "chirag-eks-key"
+#     ec2_ssh_key = "pavan-eks-key"
 #     source_security_group_ids = [aws_security_group.node_group_sg.id]
 #   }
 
